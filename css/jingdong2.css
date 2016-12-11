@@ -1,0 +1,650 @@
+@charset 'utf-8';
+/*电梯*/
+.diantt{position:fixed;
+     z-index:105;
+    height:500px;
+    width:35px;
+    bottom:10px;
+    left:10px;
+    display:none;}
+    
+ .diantt ul li{width:35px;
+               font-size:12px;
+              padding-top:10px;
+               color:white;
+               cursor:pointer;
+              text-align:center;
+              height:50px;
+              background:rgb(145,137,135);
+              border-bottom:1px solid rgb(177,169,167);}
+.diantt ul li:last-child{padding-top:0px;} 
+         
+ .diantt ul li:last-child a{display:block;
+                           height:inherit;
+	                       width:inherit;
+	                       padding-top:10px;
+                          color:white;
+                           background:rgb(94,74,75);}
+ 
+ .diantt ul li:nth-child(6),.diantt ul li:nth-child(9){line-height:50px;padding-top:0px;}
+
+.dianjiao{height:0px;
+           width:0px;
+          border:5px solid;
+          position:relative;
+          left:10px;
+          border-color:transparent transparent white transparent;}
+          
+ .diantt .Dred{background:red;border-color:red;}   
+       
+ /*右侧导航栏*/
+.dianquan{height:100%;
+           width:10px;
+           position:fixed;
+           right:0px;
+         top:0px;
+        transition:right linear 0.3s;
+           z-index:100;
+           background:rgb(124,110,110);}
+           /*购物车*/
+.dianq{background:rgb(236,234,234);
+			 height:inherit;
+			 width:270px;
+		   display:none;
+			position:absolute;
+			left:10px;
+			z-index:51;}
+		
+.dianq1{width:270px;
+          padding-left:10px;
+        height:40px; }
+      			   
+.dianq2{height:40px;
+        width:90px;
+       line-height:40px;
+       color: #5e5050;
+        font: 16px/40px "微软雅黑";}          
+
+ .dianq2_1{height:18px;
+        width:20px;
+        margin:11px 10px 0px 0px ;
+        background:url(../img/toolbars.png) ;}
+        
+.dianq3{ position: absolute;
+			right: 8px;
+			top: 16px;
+        background:url(../img/toolbars.png) ;
+        width: 12px;
+		height: 12px;
+		background-position: 0 -250px;
+		cursor: pointer;
+	transition:transform .2s ease-out 0s;}  
+	 
+.dianq3:hover{transform:rotate(180deg);}
+	        
+ .dianqa_1{width:268px;
+            height:40px;
+            border:1px solid rgb(237,210,139);
+            color:rgb(51,51,51);
+            text-align:center;
+            line-height:40px;
+            background:rgb(255,253,238);  }    
+.dianqa_1 span{width:34px;
+              height:20px;
+              color:white;
+              font-size:13px;
+              display:inline-block;
+              background:rgb(200,22,35);
+              line-height:20px;
+              margin-left:10px;
+              cursor:pointer;}
+              
+ .dianqa_2{width:113px;height:35px;
+              position:absolute;
+              bottom:55%;
+              left:30%;
+                  background:url(../img/jdm-toolbar-face.png);}     
+                           
+.dianqa_3{width:inherit;
+            position:absolute;
+              bottom:48%;
+              left:0px;
+              height:40px;
+              text-align:center;
+              line-height:20px;} 
+              
+ .dianqa_3 >a{color:rgb(200,22,35);
+          font-size:14px;}
+          
+ .dianqa_4{width:270px;
+         height:50px;
+         position:absolute;
+         bottom:5px;
+         left:0px;}
+         
+  .dianqa_41{position: absolute;
+    right: 5px;
+    top: 7px;
+    width: 110px;
+    height: 35px;
+    background:rgb(200,22,35);
+    text-align:center;
+    font: 16px/35px "微软雅黑";}
+ .dianqa_41 a{  color:white;}
+ 
+ .diancolor{color:rgb(211,22,35);font-weight:bold;}
+ /*我的足迹*/
+.dianq_2{background:rgb(236,234,234);
+			 height:inherit;
+			 width:270px;
+			position:absolute;
+			display:none;
+			left:10px;
+			z-index:51;}
+ 
+.dianq_2 .dianq2_1{background:url(../img/toolbars.png) 0px -100px; } 
+ .dianq_2 .dianq2{width:100px;}
+   
+  /**/
+.dianquanr{position:absolute;
+          z-index:50;
+             right:0px;
+             bottom:20%;}   
+.dianquanr ul>li>a{width:35px;
+               height:35px;
+               z-index:100;
+                display:block;}    
+                        
+.dianquanr li{width:35px;
+        height:35px;
+        position:relative;
+        /*background-color:rgb(124,110,110);*/
+        margin-bottom:1px;
+        border-radius:5px;}
+        
+.dianquanr li:first-child{background: url(../img/toolbars.png) rgb(124,110,110) no-repeat -88px -175px ;} 
+.dianquanr li:nth-child(2){background: url(../img/toolbars.png) rgb(124,110,110)  no-repeat -50px 0px ;}                               
+.dianquanr li:nth-child(3){background: url(../img/toolbars.png) rgb(124,110,110) no-repeat -50px -50px  ;} 
+.dianquanr li:nth-child(4){background: url(../img/toolbars.png) rgb(124,110,110)  no-repeat -50px -100px  ;} 
+.dianquanr li:nth-child(5){background: url(../img/toolbars.png) rgb(124,110,110) no-repeat -190px -150px  ;} 
+.dianquanr li:nth-child(6){background: url(../img/toolbars.png)  rgb(124,110,110) no-repeat -50px -150px  ;} 
+
+.dianquand{position:absolute;
+             right:0px;
+             z-index:51;
+             bottom:0px;} 
+                     
+.dianquand li{width:35px;
+	        height:35px;
+	        position:relative;
+	        margin-bottom:1px;
+	        border-radius:5px; } 
+        
+.dianquand ul>li>a{width:35px;
+             height:35px;
+             position:relative;
+             z-index:100;
+             color:white;
+             display:block;} 
+ 
+ .hdian{width:5px;
+		 position:absolute;
+		 z-index:52;
+		 top:10px;
+		 right:12px;
+          height:5px;
+          display:block;
+          border-radius:2.5px;
+          border:1px solid rgb(200,22,35);
+          background:rgb(200,22,35); }  
+          
+                    
+.h_hide{width:60px;
+         height:35px;
+         color:white;
+         text-align:left;
+         text-indent:5px;
+         border-radius:5px;
+         line-height:35px;
+         background:rgb(124,110,110);
+         position:absolute;
+         z-index:-1;
+         transition:left linear 0.3s;
+         left:0px;
+         top:0px;}
+          
+         
+ .dianquand li:nth-child(1){background: url(../img/toolbars.png) rgb(124,110,110) no-repeat -50px -250px  ;}         
+ .dianquand li:nth-child(2){background: url(../img/toolbars.png) rgb(124,110,110) no-repeat -50px -300px  ;}         
+.dianquand li:last-child{color:white;text-align:center; background:rgb(200,22,35);} 
+                 
+    .dianquanr li:hover .hdian{display:none;}     
+      
+ .dianquand li:hover,.dianquanr li:hover{background-color:rgb(200,22,35);} 
+ .dianquand li:hover .h_hide,.dianquanr li:hover .h_hide{background-color:rgb(200,22,35);
+    left:-55px;}     
+ /* 顶部搜索框*/
+
+.dingtop{width:100%;height:50px;
+              position:fixed;
+              top:0px;
+              left:0px;
+              background:white;
+              border-bottom:2px solid rgb(241,2,20);
+              z-index:45;
+              display:none;}        
+          
+.dingtop1{height:48px;
+           margin:0px auto;}
+           
+  .ding_search{width:125px;height:48px;
+              background:url(../img/logo_s.v2.png) no-repeat ;} 
+                                
+.ding_search a {width:125px;height:48px; display:block;}      
+          
+  #form1 input[type=text]{width:500px;height:35px;
+                         border:none;
+                        background:rgb(239,239,239);
+				        outline:none;
+				        padding:5px;
+				        color:rgb(153,153,153);
+				        font-size:13px;
+				        font-family:微软雅黑;}
+				 
+ #form1{display:block;width:550px;
+           padding-top:6px;
+           height:48px;
+           margin-left:200px;}
+/*弹框*/          
+.bounced{	position:fixed;
+             top:0px;
+             left:0px;
+     	width:100%;
+     	height:100%;
+     	background:#000;
+     	z-index:999;
+     	display:none;
+     	opacity:0.15;  } 
+              
+
+ .register{width: 418px;
+              height:507px;
+		    position: fixed;
+		    z-index: 10000;
+		    display: none;
+		    overflow: hidden;
+		    top: 0px;
+		    left: 100px;
+     border: 4px solid rgba(0,0,0,0.1);
+       background:#fff;
+       border-radius: 5px;
+     /*  display:none;*/
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;}         
+          
+          
+.register_sp{position: relative;
+    padding: 0 10px;
+    height: 31px;
+    line-height: 31px;
+    background: #f3f3f3;
+    font-size: 14px;
+    color: #666;
+    font-family: "Microsoft YaHei";  }
+  
+          
+#turnoff{
+ /* cursor: pointer;*/
+    width:13px;
+    height:13px;
+    display:block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background:url(../img/dialog.png);}
+    
+.account{width:346px;
+        height:404px;
+        position:relative;
+        margin:40px auto 0px auto; }  
+       
+        
+.account_set{width:346px;
+           height:54px;}
+
+.account_set_a1{
+	  display:inline-block;
+	 width: 171px;
+    height: 18px;
+    line-height:18px;
+      font-size: 18px;
+    font-family: "microsoft yahei";
+    text-align: center;
+    border-right: 1px solid rgb(244, 244, 244);}
+
+.account_set_a2{
+	display:inline-block;
+	 width: 171px;
+    height: 18px;
+        line-height:18px;
+       font-size: 18px;
+    font-family: "microsoft yahei";
+    text-align: center;}
+
+.account_set a:hover{font-weight:700;
+                   color:rgb(228, 57, 60);}
+
+.acco{font-weight:700;
+         color:rgb(228, 57, 60);} 
+ 
+ 
+.account_in{width:306px;
+            height:243px;
+            position:relative;
+            top:0px;
+            left:0px;
+          display:none;
+            margin:10px auto 0px auto;} 
+            
+ .account_img{
+                padding:7px;
+                   position:absolute;
+                   border:1px solid rgb(244,244,244);
+                   left:70px;
+                   top:0px;} 
+              
+ 
+          
+.account_show{width:141px;
+           height:168px;
+           display:none;
+           background:url(../img/phone-orange.png);}
+           
+.account_in_p{width:inherit;
+           height:168px;}
+
+.account_in_p1{width:inherit;
+            height:40px;
+            text-align:center;
+            line-height:40px;}
+            
+.account_in_p1 a{color:rgb(228,57,60);}
+
+.account_in_p2{width:inherit;
+            height:25px;
+background-color: #fff;
+font-family: "microsoft yahei";
+color: #999;
+padding-left: 45px;
+
+line-height: 25px;}
+
+
+em{font-style:normal;
+     width:60px;
+     display:block;
+     float:left;
+	line-height: 25px;
+	margin-left:32px;}
+			
+			
+.account_in_p2 ul{width:266px;
+              height:25px;}
+              
+.account_in_p2>ul>li{float:left;
+                   height:25px;
+                   width:75px;
+                 position:relative;}
+
+
+              
+ .account_in_p2 ul li  b{display:inline-block;
+							 position: absolute;
+							left: 0;}    
+        
+ .account_face1{width:25px;
+          height:25px;
+          background:url(../img/qr-coagent.png)  0px 0px no-repeat;}
+
+ .account_face2{width:25px;
+                 height:25px;
+          background:url(../img/qr-coagent.png)   -27px 0px no-repeat;}
+
+ .account_face3{width:25px;
+                  height:25px;
+          background:url(../img/qr-coagent.png)  -54px 0px no-repeat;}
+
+.account_out{width:310px;
+ height:25px;
+ position:absolute;
+ bottom:0px;
+ left:20px;}
+ 
+ .account_out ul {height:25px;line-height:25px;}
+ 
+ .account_out ul li {width:76px;
+					 height:25px;
+					 line-height:25px;
+					 float:left; }
+					 
+.account_out ul li:last-child a{padding:0px;
+                    text-align:center;}					
+					
+.account_out ul li a{
+	  color:rgb(102,102,102);
+	display:inline-block;
+	position:relative;
+	width:50px;
+	line-height:25px;
+	padding-left:25px;
+	height:25px;}
+	
+.account_out  a:hover{
+	text-decoration:underline;
+      color:#b61d1d;}
+	
+
+.account_out1{display:inline-block;
+              width:20px;
+              height:20px;
+              position:absolute;
+              bottom:0px;
+              left:0px;
+              background:url(../img/QQ-weixin.png) no-repeat ;}
+.line{padding:0px 10px;
+ color:#ccc;}
+
+.account_out2{display:inline-block;
+              width:20px;
+              height:20px;
+              position:absolute;
+              bottom:0px;
+              left:0px;
+              background:url(../img/QQ-weixin.png) -20px 0px no-repeat ;}
+
+.account_out_in{width:77px;height:16px;
+                 line-height:16px;
+             position:absolute;
+             right:-5px;
+             bottom:4px;
+           display:block;
+           padding-left:20px;
+           font-size:14px;
+           color:#b61d1d;}
+           
+.account_out_in1{display:block;
+                width:16px;
+                height:16px;
+                left:0px;
+                top:0px;
+                position:absolute;
+                background:url(../img/pwd-icons-new.png) -104px -75px no-repeat;}
+/*选项卡*/
+.account_other{
+	width:310px;
+	height:225px;
+	position:absolute;
+	left:20px;
+	top:45px;}
+	
+	
+.account_other1{width:inherit;
+  height:25px;
+  text-align:center;
+  line-height:25px;
+  position:absolute;
+  top:0px;
+  left:0px; 
+  color:rgb(102,102,102);
+  border:1px solid rgb(246,192,144);
+  background:rgb(254,244,229);}	
+
+.account_other1_2{
+	position:absolute;
+	width:25px;
+	height:25px;
+	display:block;
+	top:5px;
+	left:15px;
+	background:url(../img/pwd-icons-new.png) -104px -24px no-repeat;}
+
+.item-fore1{width:inherit;
+         position:relative;
+   height:40px;
+   border:1px solid #bdbdbd;
+   margin:35px 0px 20px 0px;}	
+
+.login{height:38px;
+      width:38px;
+ position:absolute;
+ top:0px;
+ left:0px;
+  background:url(../img/pwd-icons-new.png) no-repeat;
+ border-right:1px solid #bdbdbd;}
+ 
+.login_labe1{
+background-position: 0px 0px;}
+
+  .login_type{
+     outline:none;
+    height:38px;
+     display: inline-block;
+     padding:10px 0px 10px 50px;
+     line-height:38px;
+    border: 0;
+    width:304px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+    font-family: '\5b8b\4f53';}
+
+ .item-fore2{
+ 	width:inherit;
+         position:relative;
+   height:40px;
+   border:1px solid #bdbdbd;}
+ 
+
+.login_labe2{
+ background-position: -48px 0px ;}
+ 
+
+/*自动登录*/
+.set_in{width:inherit;
+        height:20px;
+        margin-top:20px;
+        color:rgb(102,102,102);
+        position:relative;
+        font-size:13px;
+        margin-bottom:20px;
+        padding-left:20px;
+        line-height:20px;}
+        
+.set_in a:hover{text-decoration:underline;
+      color:#b61d1d;}
+      
+.check_box{
+	top:3px;
+	left:0px;
+	 position:absolute;}
+
+/*登录*/
+.set_inner{width:inherit;
+        text-align:center;
+	      border: 1px solid #e85356;
+	    display: block;
+	    background: #e4393c;
+	    height: 31px;
+	    line-height: 31px;
+	    color: #fff;
+	    font-size: 20px;
+	    font-family: 'Microsoft YaHei'}
+/*瀑布流*/
+.waterfall{margin:0px auto 30px auto;
+			 width:1190px;
+			 min-width:990px;
+			 height:auto;}
+
+.waterfall li{
+	float:left;
+	margin:0 0 10px 10px;
+	display:none;}
+
+.waterfall li:nth-child(5n+1){
+	margin-left:0px;}
+
+.waterfall li a{
+	position:relative;
+	display:block;
+	padding:4px;
+	height:305px;
+	background:#fff;
+	border:1px #fff solid;
+}
+.waterfall li a:hover{
+	border:1px solid #f30214;
+}
+
+.waterfall li p{
+	width:200px;
+	height:32px;
+	margin:10px auto;
+	color:#666;
+	overflow:hidden;
+}
+.waterfall li a:hover p:nth-of-type(1){
+	color:#c81623;
+}
+.waterfall li i{
+	font-size:12px;
+	font-style:normal;
+	margin-right:3px;
+	color:#f30214;
+}
+.waterfall li span{
+	font-size:16px;
+	color:#f30214;
+}
+/*瀑布流结束*/
+/*右侧导航电话费*/
+select{
+	height: 22px;
+	color:rgb(102,102,102);
+    border: 1px solid #ccc;
+    font-family: \5b8b\4f53;
+    letter-spacing: -1px;
+    width: 53px;
+   outline: none;
+   /*border: 1px solid #ccc;*/
+ border-color: rgb(139, 173,228);}
+
+ option{
+   	font-weight: normal;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+   color:rgb(102,102,102)}    
+    
+
+
