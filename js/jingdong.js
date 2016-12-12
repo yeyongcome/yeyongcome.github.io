@@ -461,7 +461,7 @@ $(window).resize(function(){
    $('.dianquanr>ul>li:eq(0)').click(function(){
    	$('.bounced').show();
   	$('.register').show();
-
+     showUp();
    })
  $('.dianquanr>ul>li:eq(2)').click(function(){
    	$('.bounced').show();
