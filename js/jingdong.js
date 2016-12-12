@@ -455,7 +455,7 @@ $(window).resize(function(){
   $('#turnoff').click(function(){
   	$('.bounced').hide();
   	$('.register').hide();
- 
+        showUp();
   })
 //弹框出现       	
    $('.dianquanr>ul>li:eq(0)').click(function(){
