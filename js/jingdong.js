@@ -373,26 +373,31 @@ $('.asj_logo').hover(function(){
    	  $(window).scrollTop()>800?$('.dingtop').slideDown(1000):$('.dingtop').slideUp(1000);
    })
 //顶部结束
+//右侧菜单栏
+//购物车
  $('.dianquanr ul li:eq(1)').click(function(){
  	$('.dianquan').css('right','270px');
  		$('.h_hide').eq(1).hide();
  		  $('.h_hide').eq(3).show();
- 	 	$('.dianq_2').hide();
- 	$('.dianq').show();
+ 	 	$('.dianq_2').css({left:280+"px","z-index":52});
+ 	     $('.dianq').css({left:10+"px","z-index":53});
  })
-    $('.dianq3').click(function(){
-    	     $('.h_hide').eq(3).show(); 
-    		$('.dianquan').css('right','0px');
-    		$('.h_hide').eq(1).show();
-    })
-    
+   
+ //我的足迹   
  $('.dianquanr ul li:eq(3)').click(function(){
  		$('.h_hide').eq(3).hide();
  		$('.h_hide').eq(1).show();
  	$('.dianquan').css('right','270px')
- 	$('.dianq').hide();
- 	$('.dianq_2').show();
- })        	
+ 	$('.dianq').css({left:280+"px",'z-index':52});
+ 	$('.dianq_2').css({left:10+"px",'z-index':53});
+ })    
+ //点击关闭菜单展出
+  $('.dianq3').click(function(){
+    	     $('.h_hide').eq(3).show(); 
+    		$('.dianquan').css('right','0px');
+    		$('.h_hide').eq(1).show();
+    })
+ 
  //弹框的二维码的变换
  $('.account_in_p').hover(function(){
  	$('.account_img').stop().animate({left:0+'px'},'slow',function(){
@@ -423,7 +428,7 @@ $(window).resize(function(){
  	 $('.account_other').hide();
     $('.account_in').show();
     $('.account_img').css('left','0px')
- 		$('.account_show').show()
+   $('.account_show').show()
     setTimeout(nowBefore,3000)
  })
  function nowBefore(){

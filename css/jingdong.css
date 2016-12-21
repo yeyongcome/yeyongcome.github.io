@@ -430,12 +430,12 @@ text-align:left; }
                   color:rgb(204,204,204);
                  margin:0px 10px 0px 10px;}  
 /*轮播的部分*/
-#lun_bgc{width:100%;
+/*#lun_bgc{width:100%;
 height:auto;
-background:url(../img/top.bd.jpg) no-repeat 50% 0;}
+background:url(../img/top.bd.jpg) no-repeat 50% 0;}*/
 #lun{margin:0px auto;
-        width:1349px;
-        padding:0px 80px;
+        width:1190px;
+        /*padding:0px 80px;*/
  height:480px;}
 
  

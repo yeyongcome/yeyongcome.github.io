@@ -47,13 +47,22 @@
            z-index:100;
            background:rgb(124,110,110);}
            /*购物车*/
-.dianq{background:rgb(236,234,234);
+.dianq{/*background:rgb(236,234,234);*/
 			 height:inherit;
 			 width:270px;
-		   display:none;
+		   /*display:none;*/
 			position:absolute;
+			transition:0.5s ease-in left;
 			left:10px;
 			z-index:51;}
+.dianq_bgc{background:rgb(236,234,234);
+			 height:inherit;
+			 width:270px;
+		   /*display:none;*/
+			position:absolute;
+			z-index:51;
+			left:10px;
+			}	
 		
 .dianq1{width:270px;
           padding-left:10px;
@@ -134,12 +143,13 @@
  
  .diancolor{color:rgb(211,22,35);font-weight:bold;}
  /*我的足迹*/
-.dianq_2{background:rgb(236,234,234);
+.dianq_2{/*background:rgb(236,234,234);*/
 			 height:inherit;
 			 width:270px;
 			position:absolute;
-			display:none;
-			left:10px;
+			/*display:none;*/
+			transition: left 0.5s ease-in;
+			left:280px;
 			z-index:51;}
  
 .dianq_2 .dianq2_1{background:url(../img/toolbars.png) 0px -100px; } 
@@ -209,7 +219,7 @@
          background:rgb(124,110,110);
          position:absolute;
          z-index:-1;
-         transition:left linear 0.3s;
+         transition:left linear 0.1s;
          left:0px;
          top:0px;}
           
